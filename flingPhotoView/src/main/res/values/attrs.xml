@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FlingPhotoView">
+        <attr name="fling_type" format="enum">
+            <enum name="top"       value="0"/>
+            <enum name="bottom"    value="1"/>
+            <enum name="rectangle" value="2"/>
+        </attr>
+        <attr name="end_scale" format="float"></attr>
+        <attr name="return_duration" format="integer"></attr>
+        <attr name="done_duration"   format="integer"></attr>
+        <attr name="start_deltaY_threshold" format="dimension"></attr>
+        <attr name="done_deltaY_threshold"  format="dimension"></attr>
+        <attr name="need_background" format="boolean"></attr>
+        <attr name="background" format="reference"></attr>
+    </declare-styleable>
+
+</resources>

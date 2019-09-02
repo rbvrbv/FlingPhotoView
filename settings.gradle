@@ -1,0 +1,2 @@
+include ':sample', ':flingPhotoView'
+rootProject.name='FlingPhotoView'
