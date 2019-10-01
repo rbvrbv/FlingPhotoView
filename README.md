@@ -35,13 +35,13 @@ dependencies {
 * onFlingDoneFinish - after the picture flew out
 
 **XML attributes:**
-* fling_type = "top|bottom|rectangle" - how the picture should behave after fling gesture
-* end_scale = "[float]" - scale ration of the picture at the finish of the movement (for "top" or "bottom" fling_type)
-* return_duration = "[milliseconds]" - picture return duration
-* done_duration = "[milliseconds]" - picture movement duration after succesfull flinging
-* start_deltaY_threshold = "[dimension]" - Y offset for starting picture dragging
-* done_deltaY_threshold = "[dimension]" - threshold of succesfull fling offset
-* need_background = "[boolean]" - is background fading necessary during image movement
+* fling_type = "top|bottom|rectangle" - how the picture should behave after fling gesture (default: top)
+* end_scale = "[float]" - scale ration of the picture at the finish of the movement, for "top" or "bottom" fling_type (default: 1)
+* return_duration = "[milliseconds]" - picture return duration (default: 100ms)
+* done_duration = "[milliseconds]" - picture movement duration after succesfull flinging (default: 300ms)
+* start_deltaY_threshold = "[dimension]" - Y offset for starting picture dragging (default: 13dp)
+* done_deltaY_threshold = "[dimension]" - threshold of succesfull fling offset (default: 40dp)
+* need_background = "[boolean]" - is background fading necessary during image movement (default: true)
 * background = "[reference]" - reference to view object for fading (usually background). If it not defined, uses parent object
 
 ## Demo
