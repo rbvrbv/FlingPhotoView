@@ -30,7 +30,7 @@
                 android:onClick="ClickPic1"
                 android:layout_below="@+id/text1"
                 android:layout_width="220dp"
-                android:layout_height="150dp"/>
+                android:layout_height="130dp"/>
 
             <TextView
                 android:id="@+id/text2"
@@ -48,7 +48,7 @@
                 android:onClick="ClickPic2"
                 android:layout_below="@+id/text2"
                 android:layout_width="220dp"
-                android:layout_height="150dp"/>
+                android:layout_height="130dp"/>
 
             <TextView
                 android:id="@+id/text3"
@@ -66,7 +66,7 @@
                 android:onClick="ClickPic3"
                 android:layout_below="@+id/text3"
                 android:layout_width="220dp"
-                android:layout_height="150dp"/>
+                android:layout_height="130dp"/>
 
         </RelativeLayout>
 
