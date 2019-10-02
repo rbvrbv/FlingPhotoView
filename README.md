@@ -1,7 +1,7 @@
 # FlingPhotoView
 Extends PhotoView by Chris Banes. Added fling-to-close image processing with various animate effects and event handlers
 
-[![Bintray](https://img.shields.io/bintray/v/rbv/libs/flingphotoview.svg?maxAge=3600)](https://bintray.com/rbv/libs/flingphotoview)
+[![Bintray](https://badges.weareopensource.me/bintray/v/rbv/libs/flingphotoview.svg)](https://bintray.com/rbv/libs/flingphotoview)
 
 ## Dependency
 
@@ -43,6 +43,36 @@ dependencies {
 * done_deltaY_threshold = "[dimension]" - threshold of succesfull fling offset (default: 40dp)
 * need_background = "[boolean]" - is background fading necessary during image movement (default: true)
 * background = "[reference]" - reference to view object for fading (usually background). If it not defined, uses parent object
+
+## Usage
+```````````````````````
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fling="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+    
+    <RelativeLayout
+        android:background="@android:color/black"
+        android:id="@+id/background_photo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <su.rbv.flingPhotoView.FlingPhotoView
+        android:id="@+id/fling_photo_view2"
+        fling:fling_type="bottom"
+        fling:background="@id/background_photo_layout"
+        fling:done_duration="1700"
+        fling:end_scale="0.5"
+        fling:done_deltaY_threshold="100dp"
+        fling:return_duration="200"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
+```````````````````````
 
 ## Demo
 
